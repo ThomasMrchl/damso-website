@@ -1,7 +1,9 @@
 .countdown-container {
+  margin-top: 300px;
+  gap: 15px;
   display: flex;
   justify-content: center;
-  gap: 15px;
+  align-items: center;
 }
 
 .countdown-item {
@@ -38,4 +40,33 @@
 
 body {
   background-color: black;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+#navbar-wrapper {
+  padding: 10px;
+}
+
+#navbar-container {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  gap: 20px;
+  font-size: 27px;
+}
+
+.navbar-element {
+  color: grey;
+}
+
+#navbar-active {
+  color: white;
+  font-size: 40px;
+  font-weight: 600;
+}
+
+a {
+  text-decoration: none;
 }
