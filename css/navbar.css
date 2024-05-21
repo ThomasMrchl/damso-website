@@ -1,0 +1,25 @@
+#navbar-wrapper {
+    padding: 10px;
+}
+
+#navbar-container {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    gap: 20px;
+    font-size: 27px;
+}
+
+.navbar-element {
+    color: grey;
+}
+
+#navbar-active {
+    color: white;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+a {
+    text-decoration: none;
+}
