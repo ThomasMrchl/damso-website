@@ -1,3 +1,74 @@
 body {
     background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#album-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    padding: 20px;
+}
+
+#album-container {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    max-width: 1000px;
+    padding: 40px;
+    position: relative;
+}
+
+.bloc {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.bloc-left {
+    flex-direction: row;
+}
+
+.bloc-right {
+    flex-direction: row-reverse;
+}
+
+.bloc-img img {
+    height: 400px;
+    width: 400px;
+}
+
+.bloc-text {
+    color: white;
+    font-size: 24px;
+    margin: 0 40px;
+    flex: 1;
+    text-align: center;
+}
+
+.bloc-release {
+    color: grey;
+    font-style: italic;
+    font-size: 24px;
+    margin: 0 40px;
+    flex: 1;
+    text-align: center;
+}
+
+.separator {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    bottom: -40px;
+    width: 1px;
+    background-color: grey;
+    z-index: -1;
 }
