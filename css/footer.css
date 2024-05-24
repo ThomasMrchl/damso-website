@@ -1,0 +1,33 @@
+#footer-wrapper {
+    border-top: 1px solid grey;
+    margin-top: 50px;
+}
+
+#footer-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 15px;
+    gap: 15px;
+}
+
+.footer-title {
+    font-size: 25px;
+    color: white;
+}
+
+#credits-bloc {
+    display: flex;
+    gap: 15px;
+}
+
+.Credits {
+    font-size: 18px;
+    color: grey;
+    
+    &:hover {
+        text-decoration: underline;
+    }
+}
+ 

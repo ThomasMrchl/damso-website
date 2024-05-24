@@ -1,0 +1,46 @@
+body {
+    background-color: black;
+}
+
+#credits-wrapper {
+    margin-top: 50px;
+    min-height: 100vh;
+    display: flex;
+    gap: 50px;
+    flex-direction: column;
+}
+
+#credits-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.Card {
+    border: 1px solid white;
+    border-radius: 25px;
+    padding: 25px;
+    max-width: 200px;
+    color: white;
+    text-align: center;
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+}
+
+.Class {
+    color: grey;
+    font-style: italic;
+    font-size: 25px;
+}
+
+.Desc {
+    font-size: 20px;
+}
+
+.Title {
+    color: white;
+    font-size: 35px;
+    text-align: center;
+}

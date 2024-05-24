@@ -19,6 +19,7 @@ a {
     max-width: 1000px;
     display: flex;
     flex-direction: column;
+    gap: 15px;
 }
 
 .tour-date {
