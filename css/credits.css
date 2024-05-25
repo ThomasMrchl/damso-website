@@ -18,7 +18,7 @@ body {
 }
 
 .Card {
-    border: 1px solid white;
+    border: 1px solid grey;
     border-radius: 25px;
     padding: 25px;
     max-width: 200px;
@@ -27,20 +27,30 @@ body {
     display: flex;
     gap: 15px;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .Class {
-    color: grey;
     font-style: italic;
-    font-size: 25px;
+    font-size: 18px;
 }
 
 .Desc {
-    font-size: 20px;
+    font-size: 18px;
+    color: gray;
 }
 
 .Title {
     color: white;
-    font-size: 35px;
+    font-size: 25px;
     text-align: center;
+}
+
+.avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
 }
