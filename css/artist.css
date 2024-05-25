@@ -28,9 +28,31 @@ a:hover {
 
 .bloc {
     display: flex;
-    flex-direction: column;
-    gap: 5px;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 20px; 
+    
 }
+
+.bloc .Text {
+    flex-grow: 1;
+    padding: 20px;
+    
+}
+
+.bloc img {
+    width: 400px;
+    height: auto;
+}
+
+.bloc:nth-child(even) img {
+    margin-left: 20px; 
+}
+
+.bloc:nth-child(odd) img {
+    margin-right: 20px; 
+}
+
 
 .Title {
     font-size: 35px;
@@ -40,4 +62,102 @@ a:hover {
 .Text {
     font-size: 24px;
     color: grey;
+}
+/* Quiz styles */
+#quiz-section {
+    text-align: left;
+    margin-top: 50px;
+}
+
+#start-quiz-btn {
+    background-color: #f90;
+    color: #000;
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#start-quiz-btn:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+#quiz-popup {
+    margin: 20px 0;
+    font-size: 18px;
+    color: #fff;
+}
+
+#quiz-wrapper {
+    margin-top: 50px;
+    padding: 20px;
+    border-radius: 10px;
+    border: solid #ccc;
+    max-width: 600px;
+    margin: 50px auto;
+}
+
+#quiz-wrapper h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #f90;
+}
+
+.quiz-question {
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.quiz-question p {
+    margin-bottom: 5px;
+    font-size: 18px;
+    color: #f90;
+}
+
+button[type="submit"] {
+    background-color: #f90;
+    color: #000;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+#quiz-result {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #000;
+}
+
+#quiz-timer {
+    font-size: 18px;
+    color: #f90;
+    margin-top: 10px;
+}
+
+#sommaire {
+    background-color: #f90;
+    padding: 10px;
+    overflow-x: auto;
+    text-align: center;
+}
+#sommaire a {
+    display: inline-block;
+    padding: 10px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+#sommaire a:hover {
+    background-color: #ddd;
 }

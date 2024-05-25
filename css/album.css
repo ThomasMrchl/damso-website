@@ -42,6 +42,9 @@ body {
     height: 400px;
     width: 400px;
 }
+.bloc-img img:hover {
+    border: 2px solid #fff;
+}
 
 .bloc-text {
     color: white;
