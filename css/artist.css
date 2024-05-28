@@ -68,8 +68,8 @@ a:hover {
     text-align: left;
     margin-top: 50px;
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     flex-direction: column;
     gap: 15px;
 }
@@ -141,7 +141,7 @@ button[type="submit"]:hover {
 #quiz-result {
     margin-top: 20px;
     font-size: 18px;
-    color: #000;
+    color: white;
 }
 
 #quiz-timer {
@@ -164,5 +164,5 @@ button[type="submit"]:hover {
     font-weight: bold;
 }
 #sommaire a:hover {
-    background-color: white;
+    background-color: #ddd;
 }

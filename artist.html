@@ -146,78 +146,79 @@
             </div>
         </div>
     </div>
-        <div id="quiz-section">
-            <div class="Title" id="quiz"> Quiz</div>
-            <button id="start-quiz-btn">Superfan? Teste toi! </button>
-            <div id="quiz-popup" style="display: none;">
-                <p>Le quiz va débuter dans <span id="countdown">3</span> secondes...</p>
-            </div>
-            <div id="quiz-wrapper" style="display: none;">
-                <h2>Teste tes connaissances sur Damso</h2>
-                <form id="quiz-form">
-                    <div class="user-info">
-                        <label for="username">Nom :</label>
-                        <input type="text" id="username" name="username" required>
-                    </div>
-                    <div class="user-info">
-                        <label for="email">Email :</label>
-                        <input type="email" id="email" name="email" required>
-                    </div>
-                    <div class="quiz-question">
-                        <p>Quand est né Damso ?</p>
-                        <input type="radio" id="q1a" name="question1" value="10 mai 1992">
-                        <label for="q1a">10 mai 1992</label><br>
-                        <input type="radio" id="q1b" name="question1" value="15 juin 1993">
-                        <label for="q1b">15 juin 1993</label><br>
-                        <input type="radio" id="q1c" name="question1" value="20 juillet 1991">
-                        <label for="q1c">20 juillet 1991</label>
-                    </div>
-                    <div class="quiz-question">
-                        <p>Quel est le titre de son premier album ?</p>
-                        <input type="radio" id="q2a" name="question2" value="Batterie faible">
-                        <label for="q2a">Batterie faible</label><br>
-                        <input type="radio" id="q2b" name="question2" value="Ipséité">
-                        <label for="q2b">Ipséité</label><br>
-                        <input type="radio" id="q2c" name="question2" value="QALF">
-                        <label for="q2c">QALF</label>
-                    </div>
-                    <div class="quiz-question">
-                        <p>En quelle année a-t-il rejoint le label 92i ?</p>
-                        <input type="radio" id="q3a" name="question3" value="2013">
-                        <label for="q3a">2013</label><br>
-                        <input type="radio" id="q3b" name="question3" value="2015">
-                        <label for="q3b">2015</label><br>
-                        <input type="radio" id="q3c" name="question3" value="2017">
-                        <label for="q3c">2017</label>
-                    </div>
-                    <div class="quiz-question">
-                        <p>Quelle chanson de l'album "Ipséité" a connu un grand succès ? (choisissez tout ce qui s'applique)</p>
-                        <input type="checkbox" id="q4a" name="question4" value="Macarena">
-                        <label for="q4a">Macarena</label><br>
-                        <input type="checkbox" id="q4b" name="question4" value="Mosaïque Solitaire">
-                        <label for="q4b">Mosaïque Solitaire</label><br>
-                        <input type="checkbox" id="q4c" name="question4" value="Signaler">
-                        <label for="q4c">Signaler</label>
-                    </div>
-                    <div class="quiz-question">
-                        <p>Quelle est une des thématiques récurrentes dans les œuvres de Damso ?</p>
-                        <select id="question5" name="question5">
-                            <option value="Joie de vivre">Joie de vivre</option>
-                            <option value="Féminisme">Féminisme</option>
-                            <option value="Fête">Fête</option>
-                            <option value="Identité">Identité</option>
-                        </select>
-                    </div>
-                    <div class="quiz-question">
-                        <p>Combien de membres composent le groupe OPG formé par Damso ?</p>
-                        <input type="number" id="question6" name="question6" min="1" max="10">
-                    </div>
-                    <button type="submit">Soumettre</button>
-                </form>
-                <div id="quiz-result"></div>
-            </div>
-            <div id="quiz-timer" style="display: none;">Temps restant : <span id="time-left">60</span> secondes</div>
+
+    <div id="quiz-section">
+        <div class="Title" id="quiz"> Quiz</div>
+        <button id="start-quiz-btn">Superfan? Teste toi! </button>
+        <div id="quiz-popup" style="display: none;">
+            <p>Le quiz va débuter dans <span id="countdown">3</span> secondes...</p>
         </div>
+        <div id="quiz-wrapper" style="display: none;">
+            <h2>Teste tes connaissances sur Damso</h2>
+            <form id="quiz-form">
+                <div class="user-info">
+                    <label for="username">Nom :</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                <div class="user-info">
+                    <label for="email">Email :</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="quiz-question">
+                    <p>Quand est né Damso ?</p>
+                    <input type="radio" id="q1a" name="question1" value="10 mai 1992">
+                    <label for="q1a">10 mai 1992</label><br>
+                    <input type="radio" id="q1b" name="question1" value="15 juin 1993">
+                    <label for="q1b">15 juin 1993</label><br>
+                    <input type="radio" id="q1c" name="question1" value="20 juillet 1991">
+                    <label for="q1c">20 juillet 1991</label>
+                </div>
+                <div class="quiz-question">
+                    <p>Quel est le titre de son premier album ?</p>
+                    <input type="radio" id="q2a" name="question2" value="Batterie faible">
+                    <label for="q2a">Batterie faible</label><br>
+                    <input type="radio" id="q2b" name="question2" value="Ipséité">
+                    <label for="q2b">Ipséité</label><br>
+                    <input type="radio" id="q2c" name="question2" value="QALF">
+                    <label for="q2c">QALF</label>
+                </div>
+                <div class="quiz-question">
+                    <p>En quelle année a-t-il rejoint le label 92i ?</p>
+                    <input type="radio" id="q3a" name="question3" value="2013">
+                    <label for="q3a">2013</label><br>
+                    <input type="radio" id="q3b" name="question3" value="2015">
+                    <label for="q3b">2015</label><br>
+                    <input type="radio" id="q3c" name="question3" value="2017">
+                    <label for="q3c">2017</label>
+                </div>
+                <div class="quiz-question">
+                    <p>Quelle chanson de l'album "Ipséité" a connu un grand succès ? (choisissez tout ce qui s'applique)</p>
+                    <input type="checkbox" id="q4a" name="question4" value="Macarena">
+                    <label for="q4a">Macarena</label><br>
+                    <input type="checkbox" id="q4b" name="question4" value="Mosaïque Solitaire">
+                    <label for="q4b">Mosaïque Solitaire</label><br>
+                    <input type="checkbox" id="q4c" name="question4" value="Signaler">
+                    <label for="q4c">Signaler</label>
+                </div>
+                <div class="quiz-question">
+                    <p>Quelle est une des thématiques récurrentes dans les œuvres de Damso ?</p>
+                    <select id="question5" name="question5">
+                        <option value="Joie de vivre">Joie de vivre</option>
+                        <option value="Féminisme">Féminisme</option>
+                        <option value="Fête">Fête</option>
+                        <option value="Identité">Identité</option>
+                    </select>
+                </div>
+                <div class="quiz-question">
+                    <p>Combien de membres composent le groupe OPG formé par Damso ?</p>
+                    <input type="number" id="question6" name="question6" min="1" max="10">
+                </div>
+                <button type="submit">Soumettre</button>
+            </form>
+            <div id="quiz-result"></div>
+        </div>
+        <div id="quiz-timer" style="display: none;">Temps restant : <span id="time-left">60</span> secondes</div>
+    </div>
     
     <script src="../js/quiz.js"></script>
 

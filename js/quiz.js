@@ -2,6 +2,7 @@ let attempts = 0;
 const maxAttempts = 3;
 let timer;
 let timeLeft = 60;
+let previousScore = null;
 
 document.getElementById('start-quiz-btn').addEventListener('click', function() {
     if (attempts < maxAttempts) {
@@ -91,11 +92,19 @@ function submitQuiz() {
         score++;
     }
 
+    previousScore = score; // Mettre à jour le score précédent
     document.getElementById('quiz-result').innerText = `Votre score est de ${score}/6.`;
 
     if (attempts < maxAttempts) {
         document.getElementById('start-quiz-btn').style.display = 'block';
+        document.getElementById('previous-score').innerText = `Score précédent : ${previousScore}/6`;
     } else {
         document.getElementById('quiz-result').innerText += ' Vous avez atteint le nombre maximum de tentatives.';
     }
 }
+
+const startQuizBtn = document.getElementById('start-quiz-btn');
+const previousScoreSpan = document.createElement('span');
+previousScoreSpan.id = 'previous-score';
+previousScoreSpan.style.marginLeft = '10px';
+startQuizBtn.parentNode.insertBefore(previousScoreSpan, startQuizBtn.nextSibling);
