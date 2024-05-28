@@ -67,6 +67,11 @@ a:hover {
 #quiz-section {
     text-align: left;
     margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 15px;
 }
 
 #start-quiz-btn {
@@ -159,5 +164,5 @@ button[type="submit"]:hover {
     font-weight: bold;
 }
 #sommaire a:hover {
-    background-color: #ddd;
+    background-color: white;
 }
